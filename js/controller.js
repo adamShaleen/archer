@@ -6,4 +6,6 @@ $scope.displayAboutText = service.getAboutText();
 
 $scope.displayMapText = service.getMapText();
 
+$scope.loading = service.loading;
+
 });
