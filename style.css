@@ -1,0 +1,115 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.homeTitleBox {
+    position: absolute;
+    background-color: rgba(2,2,2, .5);
+    color: #f9f9f9;
+    padding-left: 5%;
+    padding-right: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-family: "Cabin Sketch";
+    font-size: 10em;
+    text-shadow: 2px 2px rgb(24, 24, 23);
+}
+
+.homeTitleBox p {
+    margin-top: 11%;
+    margin-bottom: 11%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 8px dotted white;
+    border-radius: 5%;
+}
+
+.navBox {
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: linear-gradient(to right, #000000, #636161);
+}
+
+.navBox button {
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 8%;
+    background-color: white;
+    font-family: "Annie Use Your Telescope";
+    font-size: 1em;
+}
+
+.social {
+    color: white;
+
+}
+
+
+.outerImageContainer {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #000000, #636161);
+}
+
+.innerImageContainer {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 2.5%;
+}
+
+.outerTextContainer {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 166, 12, 0.52),rgba(1, 52, 8, 0.86));
+}
+
+.innerTextContainer {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    margin-left: 25%;
+    margin-top: 2.5%;
+    background: white;
+    font-family: 'Annie Use Your Telescope';
+    font-size: 220%;
+    text-align: center;
+}
+
+.text {
+    padding: 2px 5px 2px 5px;
+}
+
+
+.outerMapContainer {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #000000, #636161);
+}
+
+.innerMapContainer {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 2.5%;
+    background: white;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}

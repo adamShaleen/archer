@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="archer">
+    <head>
+        <!--Link to CSS and Fonts-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" media="screen">
+        <update-title view-page="state.current.name"></update-title>
+    </head>
+
+    <!--Start of body and controller link-->
+    <body ng-controller="controller">
+
+    <!--UI-view link, puts routes on screen-->
+    <ui-view></ui-view>
+
+
+
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <!--Angular UI Route-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <!--JS files-->
+    <script src="js/app.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/updateTitle.js"></script>
+    </body>
+</html>
