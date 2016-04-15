@@ -101,7 +101,8 @@ ui-view {
 }
 
 .navBox button:hover {
-    background-color: rgb(98, 35, 176);
+    /*background-color: rgb(98, 35, 176);*/
+    height: 60px;
 }
 
 .social {
