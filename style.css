@@ -1,11 +1,27 @@
-body {
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ui-view {
+    width: 100%;
+    height: 100%;
 }
 
 .video {
     width: 100%;
     height: auto;
+    margin-bottom: -1%;
+}
+
+.video > video {
+    width: 100%;
 }
 
 .homeTitleBox {
@@ -28,39 +44,68 @@ body {
     text-align: center;
     padding-left: 3%;
     padding-right: 3%;
-    border: 8px dotted white;
-    border-radius: 5%;
+    /*border: 8px dotted white;
+    border-radius: 5%;*/
 }
 
 .navBox {
-    text-align: center;
+    /*text-align: center;*/
     width: 100%;
+    height: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
-    background: linear-gradient(to right, #000000, #636161);
+    background: linear-gradient(to top, #000000, #636161);
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    display: flex;
+}
+
+
+.navBox > div {
+    flex: 1;
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.navBox > div:nth-child(1) {
+    vertical-align: top;
+    padding-left: 2%;
+}
+
+.navBox > div:nth-child(2) {
+    text-align: right;
+    padding-right: 2%;
 }
 
 .navBox button {
     padding-top: .5%;
     padding-bottom: .5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
     border-radius: 8%;
     background-color: white;
     font-family: "Annie Use Your Telescope";
     font-size: 1em;
+    text-align: center;
+    height: 100%;
 }
 
 .social {
     color: white;
-
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 
 .outerImageContainer {
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, #000000, #636161);
+    background: linear-gradient(to bottom, #000000, #636161);
 }
 
 .innerImageContainer {
@@ -68,7 +113,8 @@ body {
     width: 50%;
     height: 50%;
     margin-left: 25%;
-    margin-top: 2.5%;
+    margin-top: 7%;
+    border: 1px solid black;
 }
 
 .outerTextContainer {
@@ -80,13 +126,13 @@ body {
 .innerTextContainer {
     position: absolute;
     width: 50%;
-    height: 200px;
     margin-left: 25%;
     margin-top: 2.5%;
     background: white;
     font-family: 'Annie Use Your Telescope';
     font-size: 220%;
     text-align: center;
+    border: 1px solid black;
 }
 
 .text {
@@ -97,7 +143,7 @@ body {
 .outerMapContainer {
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, #000000, #636161);
+    background: linear-gradient(to bottom, #000000, #636161);
 }
 
 .innerMapContainer {
@@ -105,8 +151,9 @@ body {
     width: 50%;
     height: 50%;
     margin-left: 25%;
-    margin-top: 2.5%;
+    margin-top: 7%;
     background: white;
+    border: 1px solid black;
 }
 
 .map {
