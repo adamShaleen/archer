@@ -50,10 +50,10 @@ ui-view {
 
 .homeTitleBox p:hover {
     color: rgb(98, 35, 176);
+    transform: rotate(5deg);
 }
 
 .navBox {
-    /*text-align: center;*/
     width: 100%;
     height: 5%;
     padding-top: 1%;
@@ -116,18 +116,33 @@ ui-view {
     height: 60px;
 }
 
-/*.outerImageContainer {
+
+.header {
     width: 100%;
-    height: 600px;
-    background: linear-gradient(to bottom, #000000, #636161);
-}*/
+    /*height: 5%;*/
+    background: linear-gradient(to top, #000000, #636161);
+    position: absolute;
+    display: flex;
+}
+
+.header p {
+    font-family: 'Cabin Sketch';
+    font-size: 5em;
+    color: white;
+    padding-left: 2%;
+}
+
+.header p:hover {
+    color: rgb(98, 35, 176);
+}
+
 
 .innerImageContainer {
     /*position: absolute;*/
     width: 50%;
     height: 50%;
     margin-left: 25%;
-    margin-top: 7%;
+    margin-top: 9%;
     border: 1px solid black;
 }
 
@@ -140,7 +155,7 @@ ui-view {
 .innerTextContainer {
     width: 50%;
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 3%;
     background: white;
     font-family: 'Annie Use Your Telescope';
     font-size: 1.8em;
@@ -152,19 +167,12 @@ ui-view {
     padding: 2px 5px 2px 5px;
 }
 
-
-/*.outerMapContainer {
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(to bottom, #000000, #636161);
-}*/
-
 .innerMapContainer {
     /*position: absolute;*/
     width: 50%;
     height: 50%;
     margin-left: 25%;
-    padding-top: 7%;
+    padding-top: 9%;
 }
 
 .map {
