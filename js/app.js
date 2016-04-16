@@ -2,17 +2,17 @@ angular.module('archer', ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('home', {
+        .state('Archer: Home', {
             url: '/',
             templateUrl: 'home.HTML',
         })
 
-        .state('about', {
+        .state('Archer: About', {
             url: '/about',
             templateUrl: 'about.HTML',
         })
 
-        .state('favorites', {
+        .state('Archer: Favorites', {
             url: '/fav',
             templateUrl: 'fav.html',
         });

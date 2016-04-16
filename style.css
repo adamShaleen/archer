@@ -100,9 +100,19 @@ ui-view {
     height: 100%;
 }
 
-.navBox button:hover {
-    /*background-color: rgb(98, 35, 176);*/
-    height: 60px;
+#home:hover {
+    transform: rotate(8deg);
+    cursor: pointer;
+}
+
+#about:hover {
+    transform: rotate(8deg);
+    cursor: pointer;
+}
+
+#favorites:hover {
+    transform: rotate(8deg);
+    cursor: pointer;
 }
 
 .social {
