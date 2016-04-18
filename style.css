@@ -18,6 +18,19 @@ ui-view {
     width: 100%;
     height: auto;
     margin-bottom: -1%;
+    background: url('img/driving.JPG') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Full page video dissapears below 1313px*/
+@media (max-width: 1313px) {
+    .video > video {
+        display: none;
+    }
+    .video {
+        height: 100%;
+    }
 }
 
 .video > video {
@@ -100,6 +113,7 @@ ui-view {
     height: 100%;
 }
 
+/*Dummy class to hide button for active page*/
 .selected {
     display: none;
 }

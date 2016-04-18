@@ -2,7 +2,7 @@ angular.module('archer').service('service', function() {
 
 //--------------Picture Carousel---------------------------------------------------------------------------------------------------
 
-var pics = ['img/baby_tug.JPG', 'img/carry_hike.JPG', 'img/driving.JPG', 'img/moab.JPG', 'img/hidden_valley.JPG', 'img/sibling_tug.JPG', 'img/zion.JPG'];
+var pics = ['img/baby_tug.JPG', 'img/carry_hike.JPG', 'img/trees.JPG', 'img/moab.JPG', 'img/hidden_valley.JPG', 'img/sibling_tug.JPG', 'img/zion.JPG'];
 var i = 0;
 this.current = 'img/baby_tug.JPG';
 
