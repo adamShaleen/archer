@@ -100,6 +100,10 @@ ui-view {
     height: 100%;
 }
 
+.selected {
+    display: none;
+}
+
 #home:hover {
     transform: rotate(8deg);
     cursor: pointer;

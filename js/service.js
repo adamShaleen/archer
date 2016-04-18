@@ -27,6 +27,7 @@ this.loading = function() {
 this.loading();
 //-----------------------------------------------------------------
 
+//--------------Text box script-----------------------------------
 
 this.aboutText = "Hi! I'm Archer, and I'm an Australian cattle dog.  I was born on a farm in southern Utah, July 17th, 2015. I love to go on hikes with my mom and dad, and rampage in the snow!";
 this.mapText = "Here's a map of some of my favorite places.  There's dog parks, hiking trails, and my sister's house.  If you see me coming down the trail, get outta the way!";
@@ -40,3 +41,5 @@ this.getMapText = function() {
 };
 
 });
+
+//----------------------------------------------------------------
