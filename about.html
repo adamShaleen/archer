@@ -2,8 +2,9 @@
 <a ui-sref="Archer: Home"><div class="header"><p>Archer.</p></div></a>
 
 <!--Outer container and inner container-->
-<div class="outerTextContainer">
-    <img class="innerImageContainer" ng-src="{{pics}}" width="100%"</img>
+<div class="contentContainer">
+    <img class="modalImage" ng-click="toggleImg = false" ng-show="toggleImg" ng-src="{{pics}}"></img>
+    <img class="innerImageContainer" ng-hide="toggleImg" ng-click="toggleImg = true" ng-src="{{pics}}" width="100%"</img>
     <div class="innerTextContainer"><div class="text">{{displayAboutText}}</div></div>
 </div>
 

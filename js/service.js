@@ -2,13 +2,13 @@ angular.module('archer').service('service', function() {
 
 //--------------Picture Carousel---------------------------------------------------------------------------------------------------
 
-var pics = ['img/baby_tug.JPG', 'img/carry_hike.JPG', 'img/trees.JPG', 'img/moab.JPG', 'img/hidden_valley.JPG', 'img/sibling_tug.JPG', 'img/zion.JPG'];
+var pics = ['img/baby_tug.JPG', 'img/carry_hike.JPG', 'img/trees.JPG', 'img/moab.JPG', 'img/hidden_valley.JPG', 'img/sibling_tug.JPG', 'img/zion.JPG', 'img/stream.JPG'];
 var i = 0;
 this.current = 'img/baby_tug.JPG';
 
 this.picShow = function() {
     i += 1;
-    if (i === 7) {
+    if (i === 8) {
         i = 0;
     }
 
@@ -16,16 +16,17 @@ this.picShow = function() {
 
 };
 
+
 //----------------Dissapearing load bar-------------------------------------------------
 
 this.loading = function() {
     setTimeout(function() {
         $('#loading').fadeOut('fast');
-    }, 1800);
+    }, 1500);
 };
 
 this.loading();
-//-----------------------------------------------------------------
+
 
 //--------------Text box script-----------------------------------
 
@@ -40,6 +41,6 @@ this.getMapText = function() {
     return this.mapText;
 };
 
-});
-
 //----------------------------------------------------------------
+
+});  // closing service tag

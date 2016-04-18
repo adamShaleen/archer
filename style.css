@@ -18,7 +18,7 @@ ui-view {
     width: 100%;
     height: auto;
     margin-bottom: -1%;
-    background: url('img/driving.JPG') no-repeat;
+    background: black;
     background-position: center;
     background-size: cover;
 }
@@ -30,6 +30,10 @@ ui-view {
     }
     .video {
         height: 100%;
+        width: 100%;
+        background: url('img/driving.JPG') no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -166,7 +170,6 @@ ui-view {
 
 
 .innerImageContainer {
-    /*position: absolute;*/
     width: 50%;
     height: 50%;
     margin-left: 25%;
@@ -174,7 +177,16 @@ ui-view {
     border: 1px solid black;
 }
 
-.outerTextContainer {
+.modalImage {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb (0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.contentContainer {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 166, 12, 0.52),rgba(1, 52, 8, 0.86));
@@ -191,12 +203,23 @@ ui-view {
     border: 1px solid black;
 }
 
+@media (max-width: 1174px){
+    .innerImageContainer {
+        margin-top: 10%;
+    }
+    .innerMapContainer {
+        /*padding-top: 10%;*/
+    }
+    .innerTextContainer {
+        font-size: 1.5em;
+    }
+}
+
 .text {
     padding: 2px 5px 2px 5px;
 }
 
 .innerMapContainer {
-    /*position: absolute;*/
     width: 50%;
     height: 50%;
     margin-left: 25%;
