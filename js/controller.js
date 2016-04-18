@@ -12,6 +12,7 @@ $scope.displayAboutText = service.getAboutText();
 
 $scope.displayMapText = service.getMapText();
 
+
 // Map loading text---------------------------------
 
 $scope.loading = service.loading;
@@ -34,5 +35,6 @@ setInterval(function() {
 $scope.toggleImg = false;
 
 //-------------------------------------------------
+
 
 });  // closing conroller tag
