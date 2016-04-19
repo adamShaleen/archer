@@ -36,10 +36,12 @@ $scope.toggleImg = false;
 
 //----------Firebase Subscribe---------------------------------------
 
+$scope.emailInput = {};
 var newEmailref = new Firebase("https://archerthedog.firebaseio.com/email");
     $scope.email = $firebaseArray(newEmailref);
     $scope.addEmail = function(email) {
         $scope.email.$add(email);
+        $scope.emailInput = {};
     };
 
 
