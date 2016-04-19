@@ -1,6 +1,6 @@
 var count = 0;
 
-angular.module('archer').controller('controller', function($scope, service, $state) {
+angular.module('archer').controller('controller', function($scope, service, $state, $firebaseArray) {
 
 //-------TItle Update--------------------------------------
 
@@ -34,7 +34,13 @@ setInterval(function() {
 
 $scope.toggleImg = false;
 
-//-------------------------------------------------
+//----------Firebase Subscribe---------------------------------------
+
+var newEmailref = new Firebase("https://archerthedog.firebaseio.com/email");
+    $scope.email = $firebaseArray(newEmailref);
+    $scope.addEmail = function(email) {
+        $scope.email.$add(email);
+    };
 
 
 });  // closing conroller tag

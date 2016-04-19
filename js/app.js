@@ -1,4 +1,4 @@
-angular.module('archer', ['ui.router'])
+angular.module('archer', ['ui.router', 'firebase'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
