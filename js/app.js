@@ -4,12 +4,12 @@ angular.module('archer', ['ui.router', 'firebase'])
     $stateProvider
         .state('Archer: Home', {
             url: '/',
-            templateUrl: 'home.HTML',
+            templateUrl: 'home.html',
         })
 
         .state('Archer: About', {
             url: '/about',
-            templateUrl: 'about.HTML',
+            templateUrl: 'about.html',
         })
 
         .state('Archer: Favorites', {
