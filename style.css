@@ -15,6 +15,7 @@ ui-view {
 }
 
 .video {
+    margin: auto;
     width: 100%;
     height: 100vh;
     margin-bottom: -1%;
@@ -134,6 +135,7 @@ ui-view {
     height: 50%;
     margin-left: 25%;
     margin-top: 9%;
+    border: 1px solid rgba(113, 113, 113, 0.5);
 }
 
 .innerImageContainer:hover {
@@ -155,7 +157,6 @@ ui-view {
 .contentContainer {
     width: 100%;
     height: 100%;
-    /*background: linear-gradient(to bottom, rgba(0, 166, 12, 0.52),rgba(1, 52, 8, 0.86));*/
     background: url('img/moab.jpg');
     background-size: cover;
 }
@@ -164,14 +165,13 @@ ui-view {
     width: 50%;
     margin-left: 25%;
     margin-top: 3%;
-    /*background: white;*/
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.5);
     font-family: 'Annie Use Your Telescope';
+    font-weight: bold;
     font-size: 1.8em;
     text-align: center;
-    color: white;
-    text-shadow: black 0px 0px 1px,   black 0px 0px 1px,   black 0px 0px 1px,
-             black 0px 0px 1px,   black 0px 0px 1px,   black 0px 0px 1px;
+    color: black;
+    border: 1px solid rgba(113, 113, 113, 0.5);
 }
 
 @media (max-width: 1174px){
@@ -200,7 +200,6 @@ ui-view {
 .map {
     width: 100%;
     height: 100%;
-    /*border: 1px solid black;*/
 }
 
 #loading {
@@ -214,6 +213,19 @@ ui-view {
 
 /*============================================================================*/
 /*Full page video dissapears below 1313px*/
+@media (min-height: 846px) {
+    .video > video {
+        display: none;
+    }
+    .video {
+        height: 100%;
+        width: 100%;
+        background: url('img/driving.JPG') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 @media (max-width: 1400px) {
     .video > video {
         display: none;
