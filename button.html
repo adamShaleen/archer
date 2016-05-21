@@ -1,13 +1,21 @@
     <!--Navigation buttons at bottom of each page/footer-->
 <div class="navBox">
- <div>
-    <button id="home" ui-sref-active="selected" ui-sref="Archer: Home">Home</button>
-    <button id="about" ui-sref-active="selected" ui-sref="Archer: About">About</button>
-    <button id="favorites" ui-sref-active="selected" ng-click="loading()" ui-sref="Archer: Favorites">Favs</button>
-</div><div>
-    <form id="subscribe" ng-submit="addEmail(emailInput.email)"><input type="email" placeholder="Email Subscribe" ng-model="emailInput.email"></input></form>
-    <a href="https://www.facebook.com/adamshaleen" target="_blank"><i class="fa fa-facebook-square fa-3x social" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/adam_shaleen/" target="_blank"><i class="fa fa-instagram fa-3x social" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/search?q=%23heelerpuppy&src=typd" target="_blank"><i class="fa fa-twitter-square fa-3x social" aria-hidden="true"></i></a>
-</div>
+
+    <div>
+        <a hfef="#"><i ui-sref-active="selected" ui-sref="Archer: Home" class="fa fa-home fa-3x social"></i></a>
+        <a href="#"><i ui-sref-active="selected" ui-sref="Archer: About" class="fa fa-book fa-3x social"></i></a>
+        <a href="#"><i ui-sref-active="selected" ng-click="loading()" ui-sref="Archer: Favorites" class="fa fa-globe fa-3x social"></i></a>
+    </div>
+
+        <div>
+            <form id="subscribe" ng-submit="addEmail(emailInput.email)"><input type="email" placeholder="Email Subscribe" ng-model="emailInput.email"></input></form>
+        </div>
+
+    <div>
+        <!-- <form id="subscribe" ng-submit="addEmail(emailInput.email)"><input type="email" placeholder="Email Subscribe" ng-model="emailInput.email"></input></form> -->
+        <a href="https://www.facebook.com/adamshaleen" target="_blank"><i class="fa fa-facebook-square fa-3x social" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/adam_shaleen/" target="_blank"><i class="fa fa-instagram fa-3x social" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/search?q=%23heelerpuppy&src=typd" target="_blank"><i class="fa fa-twitter-square fa-3x social" aria-hidden="true"></i></a>
+    </div>
+
 </div>
