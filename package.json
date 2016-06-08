@@ -1,0 +1,27 @@
+{
+  "name": "archer",
+  "version": "1.0.0",
+  "description": "A website about my dog.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamShaleen/archer.git"
+  },
+  "author": "Adam Shaleen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamShaleen/archer/issues"
+  },
+  "homepage": "https://github.com/adamShaleen/archer#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.20"
+  }
+}
