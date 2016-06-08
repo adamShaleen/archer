@@ -157,7 +157,7 @@ ui-view {
 .contentContainer {
     width: 100%;
     height: 100%;
-    background: url('img/moab.jpg');
+    background: url('./img/moab.jpg');
     background-size: cover;
 }
 
